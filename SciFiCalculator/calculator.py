@@ -323,6 +323,7 @@ class BackEnd(Functions):
             elif self.display_text[curr] in 'πe':
                 self.allow_operator, self.allow_any, self.allow_constants = True, False, False
         elif button == 'root':
+            
             if self.allow_operator:
                 self.append_char_1c('^', '(', '1', '/', ')')
                 self.cursor -= 1
